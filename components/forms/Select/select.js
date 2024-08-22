@@ -1,4 +1,4 @@
-import { spanMap } from '../../../helper';
+import { spanMap } from './../../../helper';
 
 const Select = React.forwardRef(
   (

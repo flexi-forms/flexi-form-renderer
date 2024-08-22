@@ -1,5 +1,5 @@
 import Radio from '../RadioGroup/radio';
-import { spanMap } from '../../../helper';
+import { spanMap } from './../../../helper';
 
 const SimpleMatrix = ({
   id,

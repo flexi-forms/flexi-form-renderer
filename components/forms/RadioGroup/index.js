@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import Radio from './radio';
-import { VisibleIfRegex } from '../../../helper';
+import { VisibleIfRegex } from './../../../helper';
 
 const RadioGroup = ({
   id,

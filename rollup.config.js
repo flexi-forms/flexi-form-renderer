@@ -29,7 +29,7 @@ MODE.map((m) => {
   var conf = {
     input: input,
     output: {
-      name: "flexi-forms-renderer",
+      name: "@flexi-forms/flexi-forms-renderer",
       file: `dist/index.${m.fomart}.js`,
       format: m.fomart,
       exports: "auto",

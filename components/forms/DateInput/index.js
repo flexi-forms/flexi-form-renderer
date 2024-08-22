@@ -1,4 +1,4 @@
-import { spanMap } from '../../../helper';
+import { spanMap } from './../../../helper';
 import 'react-date-picker/dist/DatePicker.css';
 import 'react-calendar/dist/Calendar.css';
 import { Controller, useFormContext } from 'react-hook-form';

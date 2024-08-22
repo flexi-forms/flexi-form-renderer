@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import InputField from './input';
-import { VisibleIfRegex } from '../../../helper';
+import { VisibleIfRegex } from './../../../helper';
 
 const TextField = (
   {

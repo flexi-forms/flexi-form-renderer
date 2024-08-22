@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { spanMap } from '../../../helper';
+import { spanMap } from './../../../helper';
 
 const Input = forwardRef(
   (

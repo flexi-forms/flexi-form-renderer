@@ -1,18 +1,23 @@
-import Panel from '../components/common/Panel';
-import BooleanInput from '../components/forms/BooleanInput';
-import DateInput from '../components/forms/DateInput';
-import InputField from '../components/forms/InputField';
-import SelectField from '../components/forms/Select';
-import CheckBox from '../components/forms/CheckBox';
-import RadioGroup from '../components/forms/RadioGroup';
-import FileUpload from '../components/forms/FileUpload';
-import Textarea from '../components/forms/TextArea';
-import Matrix from '../components/forms/Matrix';
+import { Fragment } from 'react';
+import Panel from './../components/common/Panel';
+import BooleanInput from './../components/forms/BooleanInput';
+import DateInput from './../components/forms/DateInput';
+import InputField from './../components/forms/InputField';
+import SelectField from './../components/forms/Select';
+import CheckBox from './../components/forms/CheckBox';
+import RadioGroup from './../components/forms/RadioGroup';
+import FileUpload from './../components/forms/FileUpload';
+import Textarea from './../components/forms/TextArea';
+import Matrix from './../components/forms/Matrix';
 
 export const renderElement = element => {
 	switch (element.type) {
 		case 'panel':
-			return <Panel element={element} />;
+			return <Panel element={element} >
+				{element?.elements?.map(detail => (
+					<Fragment key={detail.name}>{renderElement(detail)}</Fragment>
+				))}
+			</Panel>;
 		case 'text':
 		case 'number':
 			return (

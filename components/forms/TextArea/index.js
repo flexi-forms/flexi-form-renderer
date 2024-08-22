@@ -1,6 +1,6 @@
 import { Controller, useFormContext } from 'react-hook-form';
 import Input from './input';
-import { VisibleIfRegex } from '../../../helper';
+import { VisibleIfRegex } from './../../../helper';
 
 const DEFAULT_VALUE = '';
 

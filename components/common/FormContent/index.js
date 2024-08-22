@@ -2,9 +2,9 @@
 'use strict';
 
 import React, { useMemo } from 'react';
-import { renderElement } from '../../../helper/renderer';
+import { renderElement } from './../../../helper/renderer';
 import { FormProvider } from 'react-hook-form';
-import { useToast } from '../../forms/Toaster/ToastContext';
+import { useToast } from './../../forms/Toaster/ToastContext';
 
 const FormContent = ({ model, page, methods, onPageChange }) => {
   const pageDetails = useMemo(() => model?.pages?.at(page) ?? null, [model, page]);

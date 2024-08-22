@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { spanMap } from '../../../helper';
+import { spanMap } from './../../../helper';
 
 const FileSelector = ({
   id,

@@ -2,14 +2,14 @@
 'use strict';
 
 import React, { useMemo, useState } from 'react';
-import FormHeader from '../FormHeader';
-import FormSidebar from '../FormSidebar';
-import FormContent from '../FormContent';
-import FormStepper from '../FormStepper';
-import { buildValidationSchema } from '../../../helper';
+import FormHeader from './../FormHeader';
+import FormSidebar from './../FormSidebar';
+import FormContent from './../FormContent';
+import FormStepper from './../FormStepper';
+import { buildValidationSchema } from './../../../helper';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { ToastProvider } from '../../forms/Toaster/ToastContext';
+import { ToastProvider } from './../../forms/Toaster/ToastContext';
 
 function FormViewer({ model = null }) {
   const [page, setPage] = useState(0);

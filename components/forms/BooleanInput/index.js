@@ -1,4 +1,4 @@
-import { spanMap, VisibleIfRegex } from '../../../helper';
+import { spanMap, VisibleIfRegex } from './../../../helper';
 import { Controller, useFormContext } from 'react-hook-form';
 
 const DEFAULT_VALUE = false;

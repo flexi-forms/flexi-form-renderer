@@ -1,12 +1,10 @@
 /* eslint-disable strict */
 'use strict';
 
-import { Fragment } from 'react';
 import { VisibleIfRegex } from '../../../helper';
 import { useFormContext } from 'react-hook-form';
-import { renderElement } from '../../../helper/renderer';
 
-const Panel = ({ element }) => {
+const Panel = ({ element, children }) => {
   const { watch } = useFormContext();
 
   const visibleIfMatch = element?.visibleIf?.match(VisibleIfRegex);
@@ -19,9 +17,7 @@ const Panel = ({ element }) => {
           </div>
         )}
         <div className="w-full p-4 flex flex-row flex-wrap items-end gap-3">
-          {element?.elements?.map(detail => (
-            <Fragment key={detail.name}>{renderElement(detail)}</Fragment>
-          ))}
+          {children}
         </div>
       </div>
     );

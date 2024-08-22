@@ -1,6 +1,6 @@
 import Rating from 'react-rating';
-import EmptyStar from '../../../assets/EmptyStars.svg';
-import YellowFullStar from '../../../assets/YellowFullStar.svg';
+import EmptyStar from './../../../assets/EmptyStars.svg';
+import YellowFullStar from './../../../assets/YellowFullStar.svg';
 
 const StarRating = props => {
   const {

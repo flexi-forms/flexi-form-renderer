@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect, useState } from 'react';
-import { spanMap } from '../../../helper';
+import { spanMap } from './../../../helper';
 
 const InputField = forwardRef(
   (

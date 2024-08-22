@@ -1,9 +1,7 @@
-import React, { forwardRef, useEffect } from 'react';
+import { forwardRef } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import Select from './select';
-import { VisibleIfRegex } from '../../../helper';
-
-const DEFAULT_VALUE = '';
+import { VisibleIfRegex } from './../../../helper';
 
 /**
  * Custom select field over plain HTML Select.
